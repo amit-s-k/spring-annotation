@@ -2,6 +2,7 @@ package com.stackroute;
 
 import com.stackroute.config.AppConfig;
 import com.stackroute.domain.HelloWorld;
+import com.stackroute.domain.Movie;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -12,5 +13,9 @@ public class Main {
         context.refresh();
         HelloWorld helloWorld = (HelloWorld) context.getBean("helloWorld");
         System.out.println(helloWorld.getMessage());
+
+
+        Movie movie = (Movie) context.getBean("movie");
+        movie.log();
     }
 }

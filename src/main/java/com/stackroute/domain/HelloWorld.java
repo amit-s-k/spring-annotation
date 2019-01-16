@@ -4,8 +4,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class HelloWorld {
-    private String msg="helloworld";
-    public String getMessage(){
+    private String msg = "helloworld";
+
+    public String getMessage() {
         return msg;
     }
 }
